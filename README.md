@@ -19,9 +19,12 @@ Di dalam pembuatan dan melakukan pengerjaan tugas akhir ini, kita menggunakan sa
 </br>3. Di dalam learner lab yang dipilih, terdapat beberapa menu yang salah satu nya adalah modul. Dan di dalam modul tersebut terdapat beberapa opsi lagi, yang mana kita akan memilih <i>"Learner Lab - Foundational Services"</i>. 
 <img src="https://user-images.githubusercontent.com/89560767/171995439-f1405073-f6c7-4ea4-9c20-746261fd80c7.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.3
-</br>4. Setelah itu, tampilan akan seperti Gambar 1.4 yang mana tampilan tersebut merupakan tempat dimana kita akan melakukan perintah - perintah untuk instalasi dan pembuatan topologi dan lain - lain. Sebelum itu, yang perlu diperhatikan adalah simbol merah yang berada disamping tulisan AWS harus berwarna hijau agar AWS dapat berjalan. Maka dari itu, kita perlu memulai nya dengan mengklik <i>Start Lab</i>.
+</br>4. Setelah itu, tampilan akan seperti Gambar 1.4 yang mana tampilan tersebut merupakan tempat dimana kita akan melakukan perintah - perintah untuk instalasi dan pembuatan topologi dan lain - lain. Sebelum itu, yang perlu diperhatikan adalah simbol merah yang berada disamping tulisan AWS harus berwarna hijau seperti Gambar 1.5 agar AWS dapat berjalan. Maka dari itu, kita perlu memulai nya dengan mengklik <i>Start Lab</i>.
 <img src="https://user-images.githubusercontent.com/89560767/171995599-5c701e12-96ef-4fb7-b2b8-947ace03d45d.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.4
+<img src="https://user-images.githubusercontent.com/89560767/171995612-60404fbd-d3c7-488b-8f95-920ea0078843.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.5
+</br>5. Setelah simbol AWS sudah berwarna hijau seperti Gambar 1.5, kita klik AWS dan akan muncul seperti Gambar 1.6 lalu kita klik EC2 untuk melanjutkan pembuatan instance.
 
 
 #### A. Pembuatan EC2 Instance di AWS Academy
