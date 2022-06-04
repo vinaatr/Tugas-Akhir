@@ -13,6 +13,7 @@ Di dalam pembuatan dan melakukan pengerjaan tugas akhir ini, kita menggunakan sa
 1. Login akun AWS Academy sebagai student menggunakan gmail.
 <img src="https://user-images.githubusercontent.com/89560767/171982460-a347329f-ad7c-47da-bd7a-3dfe149f4d01.png" width="700">
 2. Setelah login berhasil, AWS menampilkan menu dashboard untuk pengguna memilih learner lab yang akan digunakan. Pada mata kuliah "Arsitektur Jaringan Terkini" ini, kita menggunakan learner lab ALLFv1-15355.  
+<img src="https://user-images.githubusercontent.com/89560767/171984855-0b50ca76-95d7-4fe7-8225-d4429217d35b.png" width="700">
 
 
 #### A. Pembuatan EC2 Instance di AWS Academy
