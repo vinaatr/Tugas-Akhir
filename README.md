@@ -84,4 +84,40 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 Setelah melewati pembuatan instance EC2 dan instalasi mininet, flowmanager, dan juga ryu. Maka, untuk bagian selanjutnya yaitu membuat custom topologi berupa topology mininet 2 host dan 2 switch serta topology mininet 3 switch (loop) dengan 6 host sebagai berikut :
 
 <b> 1.1 Topologi Mininet 2 host dan 2 switch </b>
+</br>1. 
+<img src="https://user-images.githubusercontent.com/89560767/172621671-df3b1bf7-943d-4615-b210-d8990538e01c.png" width="700">
+2.
+<img src="https://user-images.githubusercontent.com/89560767/172621709-91f6aa1e-daa0-4f16-9866-771f98e8c71a.png" width="700">
+3.
+<img src="https://user-images.githubusercontent.com/89560767/172621880-c2649ad9-088a-4e5a-a5c7-4c0f24919512.png" width="700">
+4.
+<img src="https://user-images.githubusercontent.com/89560767/172622153-33f406a9-56be-4207-8e9d-9c30a0faf7e4.png" width="700">
+5.
+<img src="https://user-images.githubusercontent.com/89560767/172622199-958ea335-b61c-4c70-8751-c9cb661e8821.png" width="700">
+
 </br><b> 1.2 Topologi Mininet 3 switch (loop) dan 6 host </b>
+</br>1.
+<img src="https://user-images.githubusercontent.com/89560767/172622794-b0153ff2-6ebe-40f1-ac2d-e4d6c95d4ef8.png" width="700">
+
+2.
+<img src="https://user-images.githubusercontent.com/89560767/172622833-8f41da29-d373-427c-8b27-68580dd6c3b7.png" width="700">
+
+3.
+<img src="https://user-images.githubusercontent.com/89560767/172622893-76f06195-fa96-4a96-bdcf-e1d075bc7c00.png" width="700">
+
+4.
+<img src="https://user-images.githubusercontent.com/89560767/172622952-6e28aded-f40f-4ed9-ab47-2c79c654f436.png" width="700">
+
+5.
+<img src="https://user-images.githubusercontent.com/89560767/172623015-d1bac1f3-8fdb-4d79-84d6-85ae669ba3aa.png" width="700">
+
+#### C. Membuat aplikasi Ryu Load Balancer
+<img src="https://user-images.githubusercontent.com/89560767/172624155-6a484291-77b6-42b6-8163-1a1c084dcdcb.png" width="700">
+
+1. 
+<img src="https://user-images.githubusercontent.com/89560767/172624512-612132ac-9baf-4d6e-b1ee-8f1fc83ec761.png" width="700">
+2.
+<img src="https://user-images.githubusercontent.com/89560767/172624656-b2ce1d80-b424-47c0-a94b-cb4fcc04a7ac.png" width="700">
+3.
+<img src="https://user-images.githubusercontent.com/89560767/172624739-2cf6850e-be21-494c-bee0-620be22234c9.png" width="700">
+4.
