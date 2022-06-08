@@ -35,5 +35,7 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 1. Kita klik <i>Launch Instance</i>
 <img src="https://user-images.githubusercontent.com/89560767/172526171-d9f95843-b260-4377-ae61-fd7217472bb8.png" width="700">
 2. 
+<img src="https://user-images.githubusercontent.com/89560767/172526454-2fa908ad-7916-45b1-b6d0-91de0dddc0df.png" width="700">
+3.  
 
 11. Kita perlu mencari tau info mengenai ssh keys nya tersimpan dimana dengan menggunakan perintah ls. Dan key tersebut tersimpan di di .ssh/
