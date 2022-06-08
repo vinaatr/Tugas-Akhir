@@ -68,3 +68,15 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 16. 
 <img src="https://user-images.githubusercontent.com/89560767/172534579-bde7ea0e-4f2c-489b-a594-9b80fc872a8d.png" width="700">
 <img src="https://user-images.githubusercontent.com/89560767/172534597-56f9035f-3a9f-424d-a0aa-29e34f1ef595.png" width="700">
+17.
+<img src="https://user-images.githubusercontent.com/89560767/172535336-024236b7-6b0b-4fbe-a7cc-16742c9673ce.png" width="700">
+18.
+<img src="https://user-images.githubusercontent.com/89560767/172535468-a071dd8e-abde-4b93-9a4f-9e071bc5d3ef.png" width="700">
+19.
+<img src="https://user-images.githubusercontent.com/89560767/172535589-7d6ea150-efd0-4b7e-9559-927c79ca739e.png" width="700">
+<img src="https://user-images.githubusercontent.com/89560767/172535688-5d4869db-49de-4d52-a049-2ccb94b6fed8.png" width="700">
+20.
+<img src="https://user-images.githubusercontent.com/89560767/172535941-4da8f770-4906-4775-b14c-b0d0e89abf9c.png" width="700">
+21.
+<img src="https://user-images.githubusercontent.com/89560767/172536025-823c019b-efe6-4b9e-b8a2-05476fee5b21.png" width="700">
+
