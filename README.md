@@ -103,45 +103,56 @@ Setelah kita berhasil login dan mengupdate mesin ubuntu, terdapat beberapa hal y
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.7
 </br>4. Melakukan pip install cd ryu dan berhasil.
 <img src="https://user-images.githubusercontent.com/89560767/172535589-7d6ea150-efd0-4b7e-9559-927c79ca739e.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.8
 <img src="https://user-images.githubusercontent.com/89560767/172535688-5d4869db-49de-4d52-a049-2ccb94b6fed8.png" width="700">
-20.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.9
+</br>5. Melakukan git clone https://github.com/martimy/flowmanager. Dan setelah selesai, kita perlu melakukan reboot dengan perintah sudo reboot agar lingkungan operasional Python, Mininet, Ryu dan OpenFlow dapat berjalan dengan baik.
 <img src="https://user-images.githubusercontent.com/89560767/172535941-4da8f770-4906-4775-b14c-b0d0e89abf9c.png" width="700">
-21.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.0
+</br>6. Melakukan login kembali.
 <img src="https://user-images.githubusercontent.com/89560767/172536025-823c019b-efe6-4b9e-b8a2-05476fee5b21.png" width="700">
-</br>21.
-<img src="https://user-images.githubusercontent.com/89560767/172535336-024236b7-6b0b-4fbe-a7cc-16742c9673ce.png" width="700">
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.7
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.1
 
 #### B. Membuat Custom Topologi Mininet
 Setelah melewati pembuatan instance EC2 dan instalasi mininet, flowmanager, dan juga ryu. Maka, untuk bagian selanjutnya yaitu membuat custom topologi berupa topology mininet 2 host dan 2 switch serta topology mininet 3 switch (loop) dengan 6 host sebagai berikut :
 
-<b> 1.1 Topologi Mininet 2 host dan 2 switch </b>
-</br>1. 
+#### 1.1 Topologi Mininet 2 host dan 2 switch
+1. Pertama, kita perlu masuk ke cd mininet/custom/. Setelah itu, kita mengetikkan perintah nano tugas-2sw2h.py
 <img src="https://user-images.githubusercontent.com/89560767/172621671-df3b1bf7-943d-4615-b210-d8990538e01c.png" width="700">
-2.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.2
+</br>2. Lalu, kita mengcopy source code yang ada kedalam tugas-2sw2h.py dan source code tersebut saya lampirkan dibawah. 
 <img src="https://user-images.githubusercontent.com/89560767/172621709-91f6aa1e-daa0-4f16-9866-771f98e8c71a.png" width="700">
-3.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.3 </br>
+
+
+#### Source Code tugas-2sw2h.py :
+<img src="https://user-images.githubusercontent.com/89560767/172652233-d2e289b0-bec5-4093-a09c-1dfe79b48905.png" width="700">
+</br>3. Melakukan sudo mn --controller=none --custom custom_topo_2sw2h.py --topo mytopo --mac --arp guna menjalankan mininet tanpa controller menggunakan custom topo yang sudah dibuat
 <img src="https://user-images.githubusercontent.com/89560767/172621880-c2649ad9-088a-4e5a-a5c7-4c0f24919512.png" width="700">
-4.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.4
+</br>4. Membuat flow agar h1 dapat terhubung dengan h2  
 <img src="https://user-images.githubusercontent.com/89560767/172622153-33f406a9-56be-4207-8e9d-9c30a0faf7e4.png" width="700">
-5.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.5
+</br>5. Melakukan ping antara h1 dan h2
 <img src="https://user-images.githubusercontent.com/89560767/172622199-958ea335-b61c-4c70-8751-c9cb661e8821.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.6 </br>
 
-</br><b> 1.2 Topologi Mininet 3 switch (loop) dan 6 host </b>
-</br>1.
+
+#### 1.2 Topologi Mininet 3 switch (loop) dan 6 host
+1. Pembuatan File Berisi Konfigurasi Berekstensi .py dengan perintah nano dan nama file tugas-3sw6h.py
 <img src="https://user-images.githubusercontent.com/89560767/172622794-b0153ff2-6ebe-40f1-ac2d-e4d6c95d4ef8.png" width="700">
-
-2.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.7
 <img src="https://user-images.githubusercontent.com/89560767/172622833-8f41da29-d373-427c-8b27-68580dd6c3b7.png" width="700">
-
-3.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.8
+</br>2. Melakukan sudo mn --controller=none --custom custom_topo_2sw2h.py --topo mytopo --mac --arp guna menjalankan mininet tanpa controller menggunakan custom topo yang sudah dibuat
 <img src="https://user-images.githubusercontent.com/89560767/172622893-76f06195-fa96-4a96-bdcf-e1d075bc7c00.png" width="700">
-
-4.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 4.9
+</br>3. Membuat flow agar tiap switch dan host terhubung
 <img src="https://user-images.githubusercontent.com/89560767/172622952-6e28aded-f40f-4ed9-ab47-2c79c654f436.png" width="700">
-
-5.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.0
+</br>4. Melakukan dpctl dump-flow -O OpenFlow13 untuk melihat flow yang sudah terhubung
 <img src="https://user-images.githubusercontent.com/89560767/172623015-d1bac1f3-8fdb-4d79-84d6-85ae669ba3aa.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.1
 
 #### C. Membuat aplikasi Ryu Load Balancer
 <img src="https://user-images.githubusercontent.com/89560767/172624155-6a484291-77b6-42b6-8163-1a1c084dcdcb.png" width="700">
