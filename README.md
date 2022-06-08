@@ -88,6 +88,7 @@ Instance ini bertujuan untuk memberikan keseimbangan komputasi, memori, dan sumb
 <img src="https://user-images.githubusercontent.com/89560767/172534089-7d807d65-96b7-4ac3-8e56-decbe37a30d2.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.3
 </br>
+</br>
 Setelah kita berhasil login dan mengupdate mesin ubuntu, terdapat beberapa hal yang perlu kita install guna melakukan berbagai pembuatan topologi, aplikasi ryu, dan lain - lain. Hal - hal yang perlu kita instal tersebut yaitu mininet, flowmanager, serta ryu sebagai berikut :
 </br>1. Melakukan git clone https://github.com/mininet/mininet
 <img src="https://user-images.githubusercontent.com/89560767/172534178-9b9b5cdb-bc0c-496e-a2a3-a82a26e80fc9.png" width="700">
@@ -97,10 +98,10 @@ Setelah kita berhasil login dan mengupdate mesin ubuntu, terdapat beberapa hal y
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.5
 <img src="https://user-images.githubusercontent.com/89560767/172534597-56f9035f-3a9f-424d-a0aa-29e34f1ef595.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.6
-</br>3. Melakukan 
+</br>3. Melakukan git clone https://github.com/osrg/ryu.git
 <img src="https://user-images.githubusercontent.com/89560767/172535468-a071dd8e-abde-4b93-9a4f-9e071bc5d3ef.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.7
-19.
+</br>4. Melakukan pip install cd ryu dan berhasil.
 <img src="https://user-images.githubusercontent.com/89560767/172535589-7d6ea150-efd0-4b7e-9559-927c79ca739e.png" width="700">
 <img src="https://user-images.githubusercontent.com/89560767/172535688-5d4869db-49de-4d52-a049-2ccb94b6fed8.png" width="700">
 20.
