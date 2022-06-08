@@ -32,6 +32,8 @@ Untuk selanjutnya, kita masuk ke 4 poin utama yakni sebagai berikut :
 
 #### A. Pembuatan EC2 Instance di AWS Academy
 Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membuat instance baru sesuai dengan ketentuan yang diberikan. Instance ini bertujuan untuk memberikan keseimbangan komputasi, memori, dan sumber daya jaringan, serta digunakan untuk berbagai beban kerja. Langkah - langkah dalam pembuatan instance sebagai berikut :
-1. Kita klik <i>Launch Instance</i> 
+1. Kita klik <i>Launch Instance</i>
+<img src="https://user-images.githubusercontent.com/89560767/172526171-d9f95843-b260-4377-ae61-fd7217472bb8.png" width="700">
+2. 
 
 11. Kita perlu mencari tau info mengenai ssh keys nya tersimpan dimana dengan menggunakan perintah ls. Dan key tersebut tersimpan di di .ssh/
