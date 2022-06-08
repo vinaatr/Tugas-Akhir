@@ -156,52 +156,75 @@ Setelah melewati pembuatan instance EC2 dan instalasi mininet, flowmanager, dan 
 
 #### C. Membuat aplikasi Ryu Load Balancer
 <img src="https://user-images.githubusercontent.com/89560767/172624155-6a484291-77b6-42b6-8163-1a1c084dcdcb.png" width="700">
-
-1. 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Gambar 5.1 Topologi
+</br>1. Melakukan git clone https://github.com/abazh/learn_sdn
 <img src="https://user-images.githubusercontent.com/89560767/172624512-612132ac-9baf-4d6e-b1ee-8f1fc83ec761.png" width="700">
-2.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.2
+</br>2. Masuk ke cd learn_sdn/LB dan kita copy file rr_lb.py menjadi tugas3.py
 <img src="https://user-images.githubusercontent.com/89560767/172624656-b2ce1d80-b424-47c0-a94b-cb4fcc04a7ac.png" width="700">
-3.
-<img src="https://user-images.githubusercontent.com/89560767/172624739-2cf6850e-be21-494c-bee0-620be22234c9.png" width="700">
-4.
-![image](https://user-images.githubusercontent.com/89560767/172633168-9cdc14de-0267-477a-80cc-8aedc3497183.png)
-![image](https://user-images.githubusercontent.com/89560767/172634466-cd944299-c9cf-48e5-902f-26b447d4554f.png)
-5.
-![image](https://user-images.githubusercontent.com/89560767/172634541-183d37cd-d1bc-467b-b8b9-11e52d823ff7.png)
-6.
-![image](https://user-images.githubusercontent.com/89560767/172634597-e30ae68b-6b1d-44dd-8e8e-510e96be3e6b.png)
-![image](https://user-images.githubusercontent.com/89560767/172633344-927d42b8-9379-4ba1-80b9-b7c376c5fca3.png)
-7.
-![image](https://user-images.githubusercontent.com/89560767/172634718-b8099b6a-8a02-40bb-8ef2-3de76ec79714.png)
-![image](https://user-images.githubusercontent.com/89560767/172633427-267ac801-9ef8-4df4-b122-08d9621fa8d4.png)
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.3
+</br>3. Mengubah isi file tugas3.py seperti pada bagian yang sudah diberi tanda.
+<img src="https://user-images.githubusercontent.com/89560767/172661877-e1c412bd-9305-4860-b3c4-d17fed3eb3b9.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.4
+</br>4. Melakukan ryu manager pada terminal satu, dan melakukan perintah sudo mn --controller=remote --topo single,4 –mac pada terminal dua. 
+<img src="https://user-images.githubusercontent.com/89560767/172662333-67249a1e-f83b-43fc-ac9d-61c773cb3618.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.5
+<img src="https://user-images.githubusercontent.com/89560767/172634466-cd944299-c9cf-48e5-902f-26b447d4554f.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.6
+</br>5. Pada bagian h2,h3,h4 akan menjadi web server yang akan memberikan paket ke client yaitu h1. Pada sisi h1 melakukan akses ke webserver dan di dapati dengan algoritma round robin yang memberikan paket ke h1 adalah server h2 dengan ip 10.0.0.2
+<img src="https://user-images.githubusercontent.com/89560767/172634597-e30ae68b-6b1d-44dd-8e8e-510e96be3e6b.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.7
+<img src="https://user-images.githubusercontent.com/89560767/172633344-927d42b8-9379-4ba1-80b9-b7c376c5fca3.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.8
+</br>6. Melakukan akses kembali ke webserver kepada h1 berulang kali untuk memastikan algoritma Round-Robin berjalan dengan baik dan melakukan dpctl dump-flows -O openflow13 untuk melihat flow
+<img src="https://user-images.githubusercontent.com/89560767/172634718-b8099b6a-8a02-40bb-8ef2-3de76ec79714.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 5.9
+<img src="https://user-images.githubusercontent.com/89560767/172633427-267ac801-9ef8-4df4-b122-08d9621fa8d4.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.0
 
 #### D. Membuat aplikasi Ryu Shortest Path Routing
-![topologi tugas 4](https://user-images.githubusercontent.com/89560767/172633920-4c9a00f4-2ffd-4064-b1cf-d41126df4044.png)
+<img src="https://user-images.githubusercontent.com/89560767/172633920-4c9a00f4-2ffd-4064-b1cf-d41126df4044.png" width="300">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.1 Topologi
+</br>1. Melakukan git clone https://github.com/abazh/learn_sdn
+<img src="https://user-images.githubusercontent.com/89560767/172637346-0cb961ca-a354-43e7-bf24-3f0f2f21e088.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.2
+</br>2. Masuk ke cd learn_sdn/SPF
+<img src="https://user-images.githubusercontent.com/89560767/172637379-710ab213-5ab0-42c2-8bb5-93a4f8908024.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.3
+</br>3. Masuk ke sudo su dan menjalankan ryu-manager --observe-links dijkstra_Ryu_controller.py pada terminal 1.
+<img src="https://user-images.githubusercontent.com/89560767/172637418-3094a745-b691-4276-a956-a4d324beda47.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.4
+</br>4. Menjalankan sudo python3 topo-spf_lab.py pada terminal 2.
+<img src="https://user-images.githubusercontent.com/89560767/172637484-9c838511-f093-45a3-aee9-670f28110f82.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.5
+</br>5. Melakukan h1 ping –c 4 h4
+<img src="https://user-images.githubusercontent.com/89560767/172637565-25388300-467e-43f1-a5f3-b6f4f43cdda2.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.6
+</br>6. Melakukan h5 ping –c 4 h6
+<img src="https://user-images.githubusercontent.com/89560767/172637612-5c8f0c24-a8b4-47e3-a9c0-d80f85220494.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.7
+</br>7. Melakukan percobaan pingall pertama, tetapi tidak semua paket nya terkirim secara sempurna.
+<img src="https://user-images.githubusercontent.com/89560767/172637790-c3f9641e-7804-41f5-a87a-93035472b2ab.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.8
+</br>8. Melakukan percobaan pingall kedua, dan semua paket terkirim secara sempurna.
+<img src="https://user-images.githubusercontent.com/89560767/172637807-00600c94-6bdc-4ae7-b04f-acc30147e8dc.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 6.9
+</br>9. Mengecek Flow dengan melakukan perintah dpctl dump-flows –O openflow13
+<img src="https://user-images.githubusercontent.com/89560767/172637846-5b9fb0f4-c2e6-4bd0-90a6-12de254aae55.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.0
+<img src="https://user-images.githubusercontent.com/89560767/172637923-31ab0cb7-aea0-4fae-a19f-024c532929f2.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.1
+<img src="https://user-images.githubusercontent.com/89560767/172637967-029fee3c-e2bf-4308-9f0b-8b24d4657cac.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.2
+<img src="https://user-images.githubusercontent.com/89560767/172638002-6b32adb6-4275-414e-ae59-0626d1025ffe.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.3
+<img src="https://user-images.githubusercontent.com/89560767/172638035-ca733360-475f-4c14-a35c-4753620c4b0d.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.4
+<img src="https://user-images.githubusercontent.com/89560767/172638090-18634647-70a3-486f-9b68-3ad437267f3d.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.5
+</br>10. Melakukan percobaan h1 ping –c 4 h4 kembali. Dan terdapat perbedaan dengan hasil sebelumnya. Yang mana, jika percobaan pertama diatas terdapat (DUP!) dan dipercobaan kedua ini tidak. 
+<img src="https://user-images.githubusercontent.com/89560767/172638134-ebba1ee1-dad4-4f89-8ad2-9337867e3d4e.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 7.6
 
-1.
-![git clone](https://user-images.githubusercontent.com/89560767/172637346-0cb961ca-a354-43e7-bf24-3f0f2f21e088.png)
-2.
-![masuk cd SPF](https://user-images.githubusercontent.com/89560767/172637379-710ab213-5ab0-42c2-8bb5-93a4f8908024.png)
-3.
-![image](https://user-images.githubusercontent.com/89560767/172637418-3094a745-b691-4276-a956-a4d324beda47.png)
-4.
-![image](https://user-images.githubusercontent.com/89560767/172637484-9c838511-f093-45a3-aee9-670f28110f82.png)
-5.
-![image](https://user-images.githubusercontent.com/89560767/172637565-25388300-467e-43f1-a5f3-b6f4f43cdda2.png)
-6.
-![image](https://user-images.githubusercontent.com/89560767/172637612-5c8f0c24-a8b4-47e3-a9c0-d80f85220494.png)
-7.
-![image](https://user-images.githubusercontent.com/89560767/172637790-c3f9641e-7804-41f5-a87a-93035472b2ab.png)
-8.
-![image](https://user-images.githubusercontent.com/89560767/172637807-00600c94-6bdc-4ae7-b04f-acc30147e8dc.png)
-9.
-![image](https://user-images.githubusercontent.com/89560767/172637846-5b9fb0f4-c2e6-4bd0-90a6-12de254aae55.png)
-![image](https://user-images.githubusercontent.com/89560767/172637923-31ab0cb7-aea0-4fae-a19f-024c532929f2.png)
-![image](https://user-images.githubusercontent.com/89560767/172637967-029fee3c-e2bf-4308-9f0b-8b24d4657cac.png)
-![image](https://user-images.githubusercontent.com/89560767/172638002-6b32adb6-4275-414e-ae59-0626d1025ffe.png)
-![image](https://user-images.githubusercontent.com/89560767/172638035-ca733360-475f-4c14-a35c-4753620c4b0d.png)
-![image](https://user-images.githubusercontent.com/89560767/172638090-18634647-70a3-486f-9b68-3ad437267f3d.png)
-10.
-![image](https://user-images.githubusercontent.com/89560767/172638134-ebba1ee1-dad4-4f89-8ad2-9337867e3d4e.png)
-11.
-
+## Penutup
+Demikian laporan tugas akhir ini dibuat sebagai salah satu serangkaian dalam melengkapi tugas dari mata kuliah Arsitektur Jaringan Terkini. Sekali lagi, saya sebagai penulis memohon maaf sebesar - besar nya jikalau di dalam laporan ini terdapat kekurangan dan juga kesalahan. Akhir kata, saya ucapkan terima kasih. 
