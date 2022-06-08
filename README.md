@@ -49,41 +49,57 @@ Instance ini bertujuan untuk memberikan keseimbangan komputasi, memori, dan sumb
 </br>3. Melakukan pemilihan OS image yang digunakan yakni Ubuntu Server 22.04 LTS 64 bit
 <img src="https://user-images.githubusercontent.com/89560767/172526820-8c25a9ac-821a-4cbf-a0e0-18400af609e4.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.9
-</br>4.Melakukan pemilihan Instance type: t2.medium Key pair: vockey 
+</br>4. Melakukan pemilihan Instance type: t2.medium 
 <img src="https://user-images.githubusercontent.com/89560767/172527254-a1ac7b45-7370-4968-a749-bc35145dd58c.png" width="700">
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.0
 </br>5. Memilih Key pair: vockey 
 <img src="https://user-images.githubusercontent.com/89560767/172527326-73be4fa4-31ea-4d22-9dbe-1af9ecbe8738.png" width="700">
-6.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.1
+</br>6. Melakukan Edit Network settings dengan mencheck-list allow SSH, allow HTTP, allow HTTPS, lalu mengeditnya dengan menambahkan TCP port 8080 dan TCP port 8081
 <img src="https://user-images.githubusercontent.com/89560767/172526907-32aff2e0-04a2-48f1-bf68-30a910f8d799.png" width="700">
-7.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.2
 <img src="https://user-images.githubusercontent.com/89560767/172526950-7766ace7-f032-4a3b-ad73-09edc8ecf0ed.png" width="700">
-8.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.3
+</br>8. Melakukan Configure storage: 30 GiB, gp3 lalu klik launch instance yang berada di sebelah kanan configure storage 
 <img src="https://user-images.githubusercontent.com/89560767/172527422-e0218cd5-c3f6-4d81-90ef-5a9728f903c5.png" width="700">
-9.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.4 
 <img src="https://user-images.githubusercontent.com/89560767/172527871-2600511a-8931-448e-b9a3-e37ef05498fd.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.5 
+</br>9. Dan pembuatan launch instance dengan name and tag Tugas Akhir telah berhasil
 <img src="https://user-images.githubusercontent.com/89560767/172528655-30ed25f7-6d0e-41bd-9024-0a8a1de4c35c.png" width="700">
-10.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.6
+</br>10. Kita bisa melihat bahwa instance yang telah kita buat sudah ada dengan status check 2/2 dan kita klik connect.
 <img src="https://user-images.githubusercontent.com/89560767/172527935-a0cb250a-29ea-43f0-9176-eb8e28b15e1c.png" width="700">
-11.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.7
+</br>11. Setelah klik connect tampilan akan seperti dibawah ini, dan kita masuk ke fitur SSH Client untuk kita copy vockey pem ubuntu yang telah saya beri tanda.
 <img src="https://user-images.githubusercontent.com/89560767/172528098-716dfc86-bca9-4215-ac8b-8a809f0a122e.png" width="700">
-12. Kita perlu mencari tau info mengenai ssh keys nya tersimpan dimana dengan menggunakan perintah ls. Dan key tersebut tersimpan di di .ssh/
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.8
+</br>12. Setelah itu kita kembali ke terminal dan kita perlu mencari tau info mengenai ssh keys nya tersimpan dimana dengan menggunakan perintah ls. Dan key tersebut tersimpan di di .ssh/
 <img src="https://user-images.githubusercontent.com/89560767/172528165-d7c49d5f-5845-48bc-9b95-e7892e217824.png" width="700">
-13.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.9
+</br>13. Kita melakukan login dengan  perintah ssh -i .ssh/labuser.pem lalu masukkan vockey pem ubuntu yang sudah di copy tadi. Dan berhasil login.
 <img src="https://user-images.githubusercontent.com/89560767/172530514-9b577280-b557-4129-8da2-7bcaab2dc4fa.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.0
 <img src="https://user-images.githubusercontent.com/89560767/172530523-375a25a5-09f8-4244-9ade-e8e726e6595a.png" width="700">
-14.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.1
+</br>14.Setelah itu kita perlu meng-update mesin ubuntu terlebih dahulu dengan perintah sudo apt-get update. Dan berhasil.
 <img src="https://user-images.githubusercontent.com/89560767/172534043-c366a38d-69fe-423c-937b-5771ecb14e27.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.2
 <img src="https://user-images.githubusercontent.com/89560767/172534089-7d807d65-96b7-4ac3-8e56-decbe37a30d2.png" width="700">
-15.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.3
+</br>
+Setelah kita berhasil login dan mengupdate mesin ubuntu, terdapat beberapa hal yang perlu kita install guna melakukan berbagai pembuatan topologi, aplikasi ryu, dan lain - lain. Hal - hal yang perlu kita instal tersebut yaitu mininet, flowmanager, serta ryu sebagai berikut :
+</br>1. Melakukan git clone https://github.com/mininet/mininet
 <img src="https://user-images.githubusercontent.com/89560767/172534178-9b9b5cdb-bc0c-496e-a2a3-a82a26e80fc9.png" width="700">
-16. 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.4
+</br>2. Menginstall mininet dengan perintah mininet/util/install.sh -nfv. Dan berhasil.
 <img src="https://user-images.githubusercontent.com/89560767/172534579-bde7ea0e-4f2c-489b-a594-9b80fc872a8d.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.5
 <img src="https://user-images.githubusercontent.com/89560767/172534597-56f9035f-3a9f-424d-a0aa-29e34f1ef595.png" width="700">
-17.
-<img src="https://user-images.githubusercontent.com/89560767/172535336-024236b7-6b0b-4fbe-a7cc-16742c9673ce.png" width="700">
-18.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.6
+</br>3. Melakukan 
 <img src="https://user-images.githubusercontent.com/89560767/172535468-a071dd8e-abde-4b93-9a4f-9e071bc5d3ef.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.7
 19.
 <img src="https://user-images.githubusercontent.com/89560767/172535589-7d6ea150-efd0-4b7e-9559-927c79ca739e.png" width="700">
 <img src="https://user-images.githubusercontent.com/89560767/172535688-5d4869db-49de-4d52-a049-2ccb94b6fed8.png" width="700">
@@ -91,6 +107,9 @@ Instance ini bertujuan untuk memberikan keseimbangan komputasi, memori, dan sumb
 <img src="https://user-images.githubusercontent.com/89560767/172535941-4da8f770-4906-4775-b14c-b0d0e89abf9c.png" width="700">
 21.
 <img src="https://user-images.githubusercontent.com/89560767/172536025-823c019b-efe6-4b9e-b8a2-05476fee5b21.png" width="700">
+</br>21.
+<img src="https://user-images.githubusercontent.com/89560767/172535336-024236b7-6b0b-4fbe-a7cc-16742c9673ce.png" width="700">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 3.7
 
 #### B. Membuat Custom Topologi Mininet
 Setelah melewati pembuatan instance EC2 dan instalasi mininet, flowmanager, dan juga ryu. Maka, untuk bagian selanjutnya yaitu membuat custom topologi berupa topology mininet 2 host dan 2 switch serta topology mininet 3 switch (loop) dengan 6 host sebagai berikut :
