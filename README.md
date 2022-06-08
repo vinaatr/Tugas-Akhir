@@ -37,5 +37,7 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 2. 
 <img src="https://user-images.githubusercontent.com/89560767/172526454-2fa908ad-7916-45b1-b6d0-91de0dddc0df.png" width="700">
 3.  
+<img src="https://user-images.githubusercontent.com/89560767/172526820-8c25a9ac-821a-4cbf-a0e0-18400af609e4.png" width="700">
+4.
 
 11. Kita perlu mencari tau info mengenai ssh keys nya tersimpan dimana dengan menggunakan perintah ls. Dan key tersebut tersimpan di di .ssh/
