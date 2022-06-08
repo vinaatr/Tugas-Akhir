@@ -61,3 +61,6 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 <img src="https://user-images.githubusercontent.com/89560767/172530514-9b577280-b557-4129-8da2-7bcaab2dc4fa.png" width="700">
 <img src="https://user-images.githubusercontent.com/89560767/172530523-375a25a5-09f8-4244-9ade-e8e726e6595a.png" width="700">
 14.
+<img src="https://user-images.githubusercontent.com/89560767/172534043-c366a38d-69fe-423c-937b-5771ecb14e27.png" width="700">
+<img src="https://user-images.githubusercontent.com/89560767/172534089-7d807d65-96b7-4ac3-8e56-decbe37a30d2.png" width="700">
+15.
