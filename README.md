@@ -31,16 +31,28 @@ Di dalam pembuatan dan melakukan pengerjaan tugas akhir ini, kita menggunakan sa
 Untuk selanjutnya, kita masuk ke 4 poin utama yakni sebagai berikut :
 
 #### A. Pembuatan EC2 Instance di AWS Academy
-Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membuat instance baru sesuai dengan ketentuan yang diberikan. Instance ini bertujuan untuk memberikan keseimbangan komputasi, memori, dan sumber daya jaringan, serta digunakan untuk berbagai beban kerja. Langkah - langkah dalam pembuatan instance sebagai berikut :
-1. Kita klik <i>Launch Instance</i>
+Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membuat instance baru sesuai dengan ketentuan yang diberikan. Ketentuan tersebut sebagai berikut :
+* Name and tags: Tugas Akhir
+* OS Images: Ubuntu Server 22.04 LTS 64 bit
+* Instance type: t2.medium
+* Key pair: vockey
+* Edit Network settings: allow SSH, allow HTTP, allow HTTPS, allow TCP port 8080, allow TCP port 8081
+* Configure storage: 30 GiB, gp3
+</br>
+Instance ini bertujuan untuk memberikan keseimbangan komputasi, memori, dan sumber daya jaringan, serta digunakan untuk berbagai beban kerja. Langkah - langkah dalam pembuatan instance sebagai berikut :
+</br>1. Kita klik <i>Launch Instance</i>
 <img src="https://user-images.githubusercontent.com/89560767/172526171-d9f95843-b260-4377-ae61-fd7217472bb8.png" width="700">
-2. 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.7
+</br>2. Di dalam launch instance ini, kita mengisi sesuai dengan ketentuan yang diberikan. Pertama name and tags nya kita beri nama Tugas Akhir.
 <img src="https://user-images.githubusercontent.com/89560767/172526454-2fa908ad-7916-45b1-b6d0-91de0dddc0df.png" width="700">
-3.  
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.8
+</br>3. Melakukan pemilihan OS image yang digunakan yakni Ubuntu Server 22.04 LTS 64 bit
 <img src="https://user-images.githubusercontent.com/89560767/172526820-8c25a9ac-821a-4cbf-a0e0-18400af609e4.png" width="700">
-4.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 1.9
+</br>4.Melakukan pemilihan Instance type: t2.medium Key pair: vockey 
 <img src="https://user-images.githubusercontent.com/89560767/172527254-a1ac7b45-7370-4968-a749-bc35145dd58c.png" width="700">
-5.
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Gambar 2.0
+</br>5. Memilih Key pair: vockey 
 <img src="https://user-images.githubusercontent.com/89560767/172527326-73be4fa4-31ea-4d22-9dbe-1af9ecbe8738.png" width="700">
 6.
 <img src="https://user-images.githubusercontent.com/89560767/172526907-32aff2e0-04a2-48f1-bf68-30a910f8d799.png" width="700">
@@ -121,3 +133,44 @@ Setelah melewati pembuatan instance EC2 dan instalasi mininet, flowmanager, dan 
 3.
 <img src="https://user-images.githubusercontent.com/89560767/172624739-2cf6850e-be21-494c-bee0-620be22234c9.png" width="700">
 4.
+![image](https://user-images.githubusercontent.com/89560767/172633168-9cdc14de-0267-477a-80cc-8aedc3497183.png)
+![image](https://user-images.githubusercontent.com/89560767/172634466-cd944299-c9cf-48e5-902f-26b447d4554f.png)
+5.
+![image](https://user-images.githubusercontent.com/89560767/172634541-183d37cd-d1bc-467b-b8b9-11e52d823ff7.png)
+6.
+![image](https://user-images.githubusercontent.com/89560767/172634597-e30ae68b-6b1d-44dd-8e8e-510e96be3e6b.png)
+![image](https://user-images.githubusercontent.com/89560767/172633344-927d42b8-9379-4ba1-80b9-b7c376c5fca3.png)
+7.
+![image](https://user-images.githubusercontent.com/89560767/172634718-b8099b6a-8a02-40bb-8ef2-3de76ec79714.png)
+![image](https://user-images.githubusercontent.com/89560767/172633427-267ac801-9ef8-4df4-b122-08d9621fa8d4.png)
+
+#### D. Membuat aplikasi Ryu Shortest Path Routing
+![topologi tugas 4](https://user-images.githubusercontent.com/89560767/172633920-4c9a00f4-2ffd-4064-b1cf-d41126df4044.png)
+
+1.
+![git clone](https://user-images.githubusercontent.com/89560767/172637346-0cb961ca-a354-43e7-bf24-3f0f2f21e088.png)
+2.
+![masuk cd SPF](https://user-images.githubusercontent.com/89560767/172637379-710ab213-5ab0-42c2-8bb5-93a4f8908024.png)
+3.
+![image](https://user-images.githubusercontent.com/89560767/172637418-3094a745-b691-4276-a956-a4d324beda47.png)
+4.
+![image](https://user-images.githubusercontent.com/89560767/172637484-9c838511-f093-45a3-aee9-670f28110f82.png)
+5.
+![image](https://user-images.githubusercontent.com/89560767/172637565-25388300-467e-43f1-a5f3-b6f4f43cdda2.png)
+6.
+![image](https://user-images.githubusercontent.com/89560767/172637612-5c8f0c24-a8b4-47e3-a9c0-d80f85220494.png)
+7.
+![image](https://user-images.githubusercontent.com/89560767/172637790-c3f9641e-7804-41f5-a87a-93035472b2ab.png)
+8.
+![image](https://user-images.githubusercontent.com/89560767/172637807-00600c94-6bdc-4ae7-b04f-acc30147e8dc.png)
+9.
+![image](https://user-images.githubusercontent.com/89560767/172637846-5b9fb0f4-c2e6-4bd0-90a6-12de254aae55.png)
+![image](https://user-images.githubusercontent.com/89560767/172637923-31ab0cb7-aea0-4fae-a19f-024c532929f2.png)
+![image](https://user-images.githubusercontent.com/89560767/172637967-029fee3c-e2bf-4308-9f0b-8b24d4657cac.png)
+![image](https://user-images.githubusercontent.com/89560767/172638002-6b32adb6-4275-414e-ae59-0626d1025ffe.png)
+![image](https://user-images.githubusercontent.com/89560767/172638035-ca733360-475f-4c14-a35c-4753620c4b0d.png)
+![image](https://user-images.githubusercontent.com/89560767/172638090-18634647-70a3-486f-9b68-3ad437267f3d.png)
+10.
+![image](https://user-images.githubusercontent.com/89560767/172638134-ebba1ee1-dad4-4f89-8ad2-9337867e3d4e.png)
+11.
+
