@@ -83,5 +83,5 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 #### B. Membuat Custom Topologi Mininet
 Setelah melewati pembuatan instance EC2 dan instalasi mininet, flowmanager, dan juga ryu. Maka, untuk bagian selanjutnya yaitu membuat custom topologi berupa topology mininet 2 host dan 2 switch serta topology mininet 3 switch (loop) dengan 6 host sebagai berikut :
 
-##### 1.1 Topologi Mininet 2 host dan 2 switch
-##### 1.2 Topologi Mininet 3 switch (loop) dan 6 host
+<b> 1.1 Topologi Mininet 2 host dan 2 switch </b>
+</br><b> 1.2 Topologi Mininet 3 switch (loop) dan 6 host </b>
