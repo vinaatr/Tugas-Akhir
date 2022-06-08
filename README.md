@@ -50,6 +50,7 @@ Setelah melakukan langkah - langkah login diatas, kita melanjutkan dengan membua
 <img src="https://user-images.githubusercontent.com/89560767/172527422-e0218cd5-c3f6-4d81-90ef-5a9728f903c5.png" width="700">
 9.
 <img src="https://user-images.githubusercontent.com/89560767/172527871-2600511a-8931-448e-b9a3-e37ef05498fd.png" width="700">
+<img src="https://user-images.githubusercontent.com/89560767/172528655-30ed25f7-6d0e-41bd-9024-0a8a1de4c35c.png" width="700">
 10.
 <img src="https://user-images.githubusercontent.com/89560767/172527935-a0cb250a-29ea-43f0-9176-eb8e28b15e1c.png" width="700">
 11.
